@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Tumblr</title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
@@ -10,10 +13,10 @@
   </head>
 
   <body>
-
-    <div id="sidebar">
+  <div class="container">
+    <div class="jumbotron">
       <ul>
-        <li class="category"><%= link_to "Tumblr", root_path %></li>
+        <li><%= link_to "Tumblr", root_path %></li>
         <li><%= link_to "Posts", root_path %></li>
         <li><%= link_to "About", about_path %></li>
       </ul>
@@ -47,7 +50,7 @@
       <%= yield %>
 
     </div>
-
+  </div>
   </body>
 
 </html>
